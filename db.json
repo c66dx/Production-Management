@@ -1,0 +1,155 @@
+{
+  "produccion_diaria": [
+    {
+      "tipo_producto_id": "1",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "cantidad_producida": 11,
+      "fecha_produccion": "2024-10-14T03:00:00.000Z",
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "1",
+          "nombre": "Harina",
+          "cantidadUsada": 11,
+          "unidad": "kg"
+        },
+        {
+          "id": "d8a9",
+          "nombre": "Agua",
+          "cantidadUsada": 11122,
+          "unidad": "Litros"
+        },
+        {
+          "id": "d8a9",
+          "nombre": "Agua",
+          "cantidadUsada": 11,
+          "unidad": "Litros"
+        }
+      ],
+      "id": "71a5"
+    },
+    {
+      "tipo_producto_id": "31e4",
+      "cantidad_producida": 30,
+      "fecha_produccion": "2024-10-14T03:00:00.000Z",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "1",
+          "nombre": "Harina",
+          "cantidadUsada": 10,
+          "unidad": "kg"
+        },
+        {
+          "id": "d8a9",
+          "nombre": "Agua",
+          "cantidadUsada": 90,
+          "unidad": "Litros"
+        }
+      ],
+      "id": "e29c"
+    },
+    {
+      "tipo_producto_id": "31e4",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "cantidad_producida": 14,
+      "fecha_produccion": "2024-10-14T03:00:00.000Z",
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "9675",
+          "nombre": "Nashe",
+          "cantidadUsada": 11,
+          "unidad": "kilo"
+        },
+        {
+          "id": "d8a9",
+          "nombre": "Agua",
+          "cantidadUsada": 10,
+          "unidad": "Litros"
+        }
+      ],
+      "id": "df9b"
+    },
+    {
+      "tipo_producto_id": "31e4",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "cantidad_producida": 10,
+      "fecha_produccion": "2024-10-14T03:00:00.000Z",
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "9675",
+          "nombre": "Nashe",
+          "cantidadUsada": 900,
+          "unidad": "kilo"
+        }
+      ],
+      "id": "f140"
+    }
+  ],
+  "tipos_producto": [
+    {
+      "id": "1",
+      "nombre": "Congelados"
+    },
+    {
+      "id": "2",
+      "nombre": "Enlatados"
+    },
+    {
+      "id": "3",
+      "nombre": "Comida Preparada"
+    },
+    {
+      "id": "31e4",
+      "nombre": "Enchulado"
+    }
+  ],
+  "materias_primas": [
+    {
+      "id": "1",
+      "nombre": "Harina",
+      "cantidad": 100,
+      "stock_minimo": 10,
+      "unidad": "kg",
+      "fecha_ingreso": "2024-08-01",
+      "fecha_vencimiento": "2025-01-01"
+    },
+    {
+      "id": "d8a9",
+      "nombre": "Agua",
+      "cantidad": 10,
+      "stock_minimo": 1,
+      "unidad": "Litros"
+    },
+    {
+      "id": "9675",
+      "nombre": "Nashe",
+      "cantidad": 1000,
+      "stock_minimo": 100,
+      "unidad": "kilo"
+    }
+  ],
+  "turnos_empleados": [
+    {
+      "id": "1",
+      "nombre_empleado": "Juan Pérez",
+      "turno": "Mañana",
+      "horas_trabajadas": 8
+    },
+    {
+      "id": "2",
+      "nombre_empleado": "Ana Gómez",
+      "turno": "Tarde",
+      "horas_trabajadas": 6
+    },
+    {
+      "id": "3",
+      "nombre_empleado": "Carlos Rodríguez",
+      "turno": "Noche",
+      "horas_trabajadas": 10
+    }
+  ]
+}
