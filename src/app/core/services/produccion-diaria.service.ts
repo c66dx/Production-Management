@@ -22,6 +22,7 @@ export class ProduccionDiariaService {
   }
 
   addProduccionDiaria(produccionDiaria: ProduccionDiaria): Observable<ProduccionDiaria> {
+    // Recorremos las materias primas utilizadas y descontamos del inventario
     produccionDiaria.materiasPrimasUtilizadas.forEach(materia => {
       this.materiasPrimasService.getMateriaPrimaById(materia.id).subscribe((materiaPrima: MateriaPrima) => {
         if (materiaPrima.cantidad >= materia.cantidadUsada) {
@@ -35,7 +36,7 @@ export class ProduccionDiariaService {
       });
     });
   
-    // Guardar la producción diaria
+    // Guardamos la nueva producción diaria
     return this.http.post<ProduccionDiaria>(this.apiUrl, produccionDiaria);
   }
   

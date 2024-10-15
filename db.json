@@ -4,89 +4,71 @@
       "tipo_producto_id": "1",
       "materia_prima": null,
       "cantidad_usada": null,
-      "cantidad_producida": 11,
-      "fecha_produccion": "2024-10-14T03:00:00.000Z",
+      "cantidad_producida": 10,
+      "fecha_produccion": "2024-10-15T03:00:00.000Z",
       "materiasPrimasUtilizadas": [
         {
-          "id": "1",
-          "nombre": "Harina",
-          "cantidadUsada": 11,
-          "unidad": "kg"
+          "id": "8e9e",
+          "nombre": "Materia",
+          "cantidadUsada": 1000,
+          "unidad": "litro"
         },
         {
-          "id": "d8a9",
-          "nombre": "Agua",
-          "cantidadUsada": 11122,
-          "unidad": "Litros"
-        },
-        {
-          "id": "d8a9",
-          "nombre": "Agua",
-          "cantidadUsada": 11,
-          "unidad": "Litros"
+          "id": "33c6",
+          "nombre": "Prima",
+          "cantidadUsada": 111,
+          "unidad": "kilogramos"
         }
       ],
-      "id": "71a5"
+      "id": "a4a8"
     },
     {
-      "tipo_producto_id": "31e4",
-      "cantidad_producida": 30,
-      "fecha_produccion": "2024-10-14T03:00:00.000Z",
-      "materia_prima": null,
-      "cantidad_usada": null,
-      "materiasPrimasUtilizadas": [
-        {
-          "id": "1",
-          "nombre": "Harina",
-          "cantidadUsada": 10,
-          "unidad": "kg"
-        },
-        {
-          "id": "d8a9",
-          "nombre": "Agua",
-          "cantidadUsada": 90,
-          "unidad": "Litros"
-        }
-      ],
-      "id": "e29c"
-    },
-    {
-      "tipo_producto_id": "31e4",
-      "materia_prima": null,
-      "cantidad_usada": null,
-      "cantidad_producida": 14,
-      "fecha_produccion": "2024-10-14T03:00:00.000Z",
-      "materiasPrimasUtilizadas": [
-        {
-          "id": "9675",
-          "nombre": "Nashe",
-          "cantidadUsada": 11,
-          "unidad": "kilo"
-        },
-        {
-          "id": "d8a9",
-          "nombre": "Agua",
-          "cantidadUsada": 10,
-          "unidad": "Litros"
-        }
-      ],
-      "id": "df9b"
-    },
-    {
-      "tipo_producto_id": "31e4",
+      "id": "bb98",
+      "tipo_producto_id": "2",
       "materia_prima": null,
       "cantidad_usada": null,
       "cantidad_producida": 10,
-      "fecha_produccion": "2024-10-14T03:00:00.000Z",
+      "fecha_produccion": "2024-10-15T03:00:00.000Z",
       "materiasPrimasUtilizadas": [
         {
-          "id": "9675",
-          "nombre": "Nashe",
-          "cantidadUsada": 900,
-          "unidad": "kilo"
+          "id": "33c6",
+          "nombre": "Prima",
+          "cantidadUsada": 1500,
+          "unidad": "kilogramos"
         }
-      ],
-      "id": "f140"
+      ]
+    },
+    {
+      "id": "1222",
+      "tipo_producto_id": "31e4",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "cantidad_producida": 200,
+      "fecha_produccion": "2024-10-15T03:00:00.000Z",
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "33c6",
+          "nombre": "Prima",
+          "cantidadUsada": 8000,
+          "unidad": "kilogramos"
+        }
+      ]
+    },
+    {
+      "id": "770a",
+      "tipo_producto_id": "3",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "cantidad_producida": 100,
+      "fecha_produccion": "2024-10-15T03:00:00.000Z",
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "33c6",
+          "nombre": "Prima",
+          "cantidadUsada": 500,
+          "unidad": "kilogramos"
+        }
+      ]
     }
   ],
   "tipos_producto": [
@@ -109,27 +91,18 @@
   ],
   "materias_primas": [
     {
-      "id": "1",
-      "nombre": "Harina",
-      "cantidad": 100,
-      "stock_minimo": 10,
-      "unidad": "kg",
-      "fecha_ingreso": "2024-08-01",
-      "fecha_vencimiento": "2025-01-01"
+      "id": "8e9e",
+      "nombre": "Materia",
+      "cantidad": 9000,
+      "stock_minimo": 500,
+      "unidad": "litro"
     },
     {
-      "id": "d8a9",
-      "nombre": "Agua",
-      "cantidad": 10,
-      "stock_minimo": 1,
-      "unidad": "Litros"
-    },
-    {
-      "id": "9675",
-      "nombre": "Nashe",
-      "cantidad": 1000,
-      "stock_minimo": 100,
-      "unidad": "kilo"
+      "id": "33c6",
+      "nombre": "Prima",
+      "cantidad": 0,
+      "stock_minimo": 500,
+      "unidad": "kilogramos"
     }
   ],
   "turnos_empleados": [

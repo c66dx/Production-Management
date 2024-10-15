@@ -30,7 +30,7 @@ export class MateriasPrimasService {
   updateMateriaPrima(id: number, materiaPrima: MateriaPrima): Observable<MateriaPrima> {
     if (materiaPrima.cantidad < materiaPrima.stock_minimo) {
       console.warn(`Stock bajo de ${materiaPrima.nombre}: ${materiaPrima.cantidad} unidades`);
-      // Aquí puedes implementar una lógica adicional para alertar visualmente al usuario
+      // Aquí puedes añadir una alerta visual o lógica adicional
     }
     return this.http.put<MateriaPrima>(`${this.apiUrl}/${id}`, materiaPrima);
   }
