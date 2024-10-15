@@ -23,8 +23,9 @@ export class TurnosEmpleadosFormComponent implements OnInit {
       nombre_empleado: ['', Validators.required],
       turno: ['', Validators.required],
       fecha: ['', Validators.required],
-      horas_trabajadas: ['', [Validators.required, Validators.min(1), Validators.max(12)]]
+      horas_trabajadas: ['', [Validators.required, Validators.min(1), Validators.max(12)]], // Las horas deben ser entre 1 y 12
     });
+    
   }
 
   ngOnInit(): void {

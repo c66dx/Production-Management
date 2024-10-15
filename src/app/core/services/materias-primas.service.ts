@@ -28,8 +28,13 @@ export class MateriasPrimasService {
 
   // Actualizar una materia prima existente
   updateMateriaPrima(id: number, materiaPrima: MateriaPrima): Observable<MateriaPrima> {
+    if (materiaPrima.cantidad < materiaPrima.stock_minimo) {
+      console.warn(`Stock bajo de ${materiaPrima.nombre}: ${materiaPrima.cantidad} unidades`);
+      // Aquí puedes implementar una lógica adicional para alertar visualmente al usuario
+    }
     return this.http.put<MateriaPrima>(`${this.apiUrl}/${id}`, materiaPrima);
   }
+  
 
   // Eliminar una materia prima
   deleteMateriaPrima(id: number): Observable<void> {

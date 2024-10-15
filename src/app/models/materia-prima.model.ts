@@ -1,10 +1,10 @@
 export interface MateriaPrima {
   id: number;
   nombre: string;
-  tipo: string;  // Podría ser Unidad o Kilo, dependiendo del tipo
+  tipo: string;  // unidad, kilo, etc
   cantidad: number;
   stock_minimo: number;
-  unidad: string;  // Esta propiedad es clave, asegúrate de que exista
+  unidad: string;  
   fecha_ingreso: Date;
   fecha_vencimiento: Date;
 }

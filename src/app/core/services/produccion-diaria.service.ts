@@ -22,6 +22,20 @@ export class ProduccionDiariaService {
   }
 
   addProduccionDiaria(produccionDiaria: ProduccionDiaria): Observable<ProduccionDiaria> {
+    produccionDiaria.materiasPrimasUtilizadas.forEach(materia => {
+      this.materiasPrimasService.getMateriaPrimaById(materia.id).subscribe((materiaPrima: MateriaPrima) => {
+        if (materiaPrima.cantidad >= materia.cantidadUsada) {
+          materiaPrima.cantidad -= materia.cantidadUsada;
+          this.materiasPrimasService.updateMateriaPrima(materiaPrima.id, materiaPrima).subscribe(() => {
+            console.log(`Materia prima actualizada: ${materiaPrima.nombre}, nueva cantidad: ${materiaPrima.cantidad}`);
+          });
+        } else {
+          console.warn(`No hay suficiente cantidad de ${materiaPrima.nombre} en stock.`);
+        }
+      });
+    });
+  
+    // Guardar la producción diaria
     return this.http.post<ProduccionDiaria>(this.apiUrl, produccionDiaria);
   }
   
