@@ -18,9 +18,9 @@ import { TurnosEmpleadosFormComponent } from './turnos-empleados-form/turnos-emp
     MaterialModule,
     FormsModule,
     RouterModule.forChild([
-      { path: '', component: TurnosEmpleadosListComponent },  // Listar turnos
-      { path: 'nuevo', component: TurnosEmpleadosFormComponent },  // Añadir nuevo turno
-      { path: 'editar/:id', component: TurnosEmpleadosFormComponent }  // Editar turno existente
+      { path: '', component: TurnosEmpleadosListComponent },  
+      { path: 'nuevo', component: TurnosEmpleadosFormComponent },  
+      { path: 'editar/:id', component: TurnosEmpleadosFormComponent }  
     ])
   ]
 })

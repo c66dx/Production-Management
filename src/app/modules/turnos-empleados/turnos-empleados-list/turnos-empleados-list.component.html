@@ -1,6 +1,7 @@
 <mat-card>
     <mat-card-header>
       <mat-card-title>Gestión de Turnos de Empleados</mat-card-title>
+      <button mat-raised-button color="primary" [routerLink]="['/turnos-empleados/nuevo']">Agregar Nuevo Turno</button>
     </mat-card-header>
   
     <mat-card-content>
@@ -9,7 +10,7 @@
         <mat-label>Buscar por nombre de empleado</mat-label>
         <input matInput [(ngModel)]="filtro" (input)="filtrarTurnos()" placeholder="Nombre de empleado">
       </mat-form-field>
-  
+      
       <!-- Tabla de turnos -->
       <table mat-table [dataSource]="turnosFiltrados" class="mat-elevation-z8">
         <!-- Columnas de la tabla -->
@@ -50,8 +51,6 @@
       </table>
     </mat-card-content>
   
-    <mat-card-actions>
-      <button mat-raised-button color="primary" [routerLink]="['/turnos-empleados/nuevo']">Agregar Nuevo Turno</button>
-    </mat-card-actions>
+    
   </mat-card>
   
