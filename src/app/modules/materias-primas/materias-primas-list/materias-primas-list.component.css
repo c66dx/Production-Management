@@ -1,0 +1,18 @@
+.mat-card {
+    margin: 20px;
+  }
+  
+  .mat-header-cell, .mat-cell {
+    color: black;
+    font-weight: 500;
+  }
+  
+  .mat-row:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
