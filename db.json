@@ -1,62 +1,23 @@
 {
   "produccion_diaria": [
     {
-      "tipo_producto_id": "1",
+      "id": "ebd0",
+      "tipo_producto_id": "3",
       "materia_prima": null,
       "cantidad_usada": null,
-      "cantidad_producida": 10,
+      "cantidad_producida": 300,
       "fecha_produccion": "2024-10-15T03:00:00.000Z",
       "materiasPrimasUtilizadas": [
         {
           "id": "8e9e",
           "nombre": "Materia",
-          "cantidadUsada": 1000,
+          "cantidadUsada": 500,
           "unidad": "litro"
-        },
-        {
-          "id": "33c6",
-          "nombre": "Prima",
-          "cantidadUsada": 111,
-          "unidad": "kilogramos"
         }
-      ],
-      "id": "a4a8"
+      ]
     },
     {
-      "id": "bb98",
       "tipo_producto_id": "2",
-      "materia_prima": null,
-      "cantidad_usada": null,
-      "cantidad_producida": 10,
-      "fecha_produccion": "2024-10-15T03:00:00.000Z",
-      "materiasPrimasUtilizadas": [
-        {
-          "id": "33c6",
-          "nombre": "Prima",
-          "cantidadUsada": 1500,
-          "unidad": "kilogramos"
-        }
-      ]
-    },
-    {
-      "id": "1222",
-      "tipo_producto_id": "31e4",
-      "materia_prima": null,
-      "cantidad_usada": null,
-      "cantidad_producida": 200,
-      "fecha_produccion": "2024-10-15T03:00:00.000Z",
-      "materiasPrimasUtilizadas": [
-        {
-          "id": "33c6",
-          "nombre": "Prima",
-          "cantidadUsada": 8000,
-          "unidad": "kilogramos"
-        }
-      ]
-    },
-    {
-      "id": "770a",
-      "tipo_producto_id": "3",
       "materia_prima": null,
       "cantidad_usada": null,
       "cantidad_producida": 100,
@@ -65,10 +26,17 @@
         {
           "id": "33c6",
           "nombre": "Prima",
-          "cantidadUsada": 500,
+          "cantidadUsada": 9600,
           "unidad": "kilogramos"
+        },
+        {
+          "id": "8e9e",
+          "nombre": "Materia",
+          "cantidadUsada": 8000,
+          "unidad": "litro"
         }
-      ]
+      ],
+      "id": "a4a8"
     }
   ],
   "tipos_producto": [
@@ -93,16 +61,26 @@
     {
       "id": "8e9e",
       "nombre": "Materia",
-      "cantidad": 9000,
+      "cantidad": 500,
       "stock_minimo": 500,
       "unidad": "litro"
     },
     {
-      "id": "33c6",
       "nombre": "Prima",
-      "cantidad": 0,
+      "cantidad": 400,
       "stock_minimo": 500,
-      "unidad": "kilogramos"
+      "unidad": "kilogramos",
+      "id": "33c6"
+    },
+    {
+      "id": "c6b3",
+      "nombre": "Harina de Trigo",
+      "tipo": "Unidad",
+      "cantidad": 100,
+      "stock_minimo": 20,
+      "unidad": "kg",
+      "fecha_ingreso": "2024-01-01",
+      "fecha_vencimiento": "2025-01-01"
     }
   ],
   "turnos_empleados": [

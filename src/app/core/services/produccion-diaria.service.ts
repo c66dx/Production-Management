@@ -40,7 +40,31 @@ export class ProduccionDiariaService {
     return this.http.post<ProduccionDiaria>(this.apiUrl, produccionDiaria);
   }
   
-  updateProduccionDiaria(id: number, produccionDiaria: ProduccionDiaria): Observable<ProduccionDiaria> {
+  updateProduccionDiaria(id: number, produccionDiaria: ProduccionDiaria, produccionOriginal: ProduccionDiaria): Observable<ProduccionDiaria> {
+    // Recorremos las nuevas materias primas utilizadas
+    produccionDiaria.materiasPrimasUtilizadas.forEach(materia => {
+      // Verificamos si la materia prima es nueva comparando con la producción original
+      const materiaExistente = produccionOriginal.materiasPrimasUtilizadas.find(m => m.id === materia.id);
+  
+      if (!materiaExistente || materia.cantidadUsada > materiaExistente.cantidadUsada) {
+        // Si es una nueva materia prima o si la cantidad usada es mayor, actualizamos el stock
+        this.materiasPrimasService.getMateriaPrimaById(materia.id).subscribe((materiaPrima: MateriaPrima) => {
+          const diferenciaCantidad = materiaExistente ? (materia.cantidadUsada - materiaExistente.cantidadUsada) : materia.cantidadUsada;
+          
+          if (materiaPrima.cantidad >= diferenciaCantidad) {
+            materiaPrima.cantidad -= diferenciaCantidad;
+  
+            this.materiasPrimasService.updateMateriaPrima(materiaPrima.id, materiaPrima).subscribe(() => {
+              console.log(`Stock actualizado para ${materiaPrima.nombre}, nueva cantidad: ${materiaPrima.cantidad}`);
+            });
+          } else {
+            console.warn(`No hay suficiente stock de ${materiaPrima.nombre}`);
+          }
+        });
+      }
+    });
+  
+    // Actualizamos la producción después de manejar las materias primas
     return this.http.put<ProduccionDiaria>(`${this.apiUrl}/${id}`, produccionDiaria);
   }  
 

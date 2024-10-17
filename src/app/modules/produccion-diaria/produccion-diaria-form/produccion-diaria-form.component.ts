@@ -114,13 +114,15 @@ export class ProduccionDiariaFormComponent implements OnInit {
     if (this.produccionForm.valid) {
       const produccionData = {
         ...this.produccionForm.value,
-        materiasPrimasUtilizadas: this.materiasPrimasUtilizadas  // Añadir materias primas utilizadas
+        materiasPrimasUtilizadas: this.materiasPrimasUtilizadas
       };
-
-      // Actualizar o crear nueva producción
+  
       if (this.produccionId) {
-        this.produccionDiariaService.updateProduccionDiaria(this.produccionId, produccionData).subscribe(() => {
-          this.router.navigate(['/produccion-diaria']);
+        // Obtener la producción original antes de actualizar
+        this.produccionDiariaService.getProduccionDiariaById(this.produccionId).subscribe(produccionOriginal => {
+          this.produccionDiariaService.updateProduccionDiaria(this.produccionId ?? 0, produccionData, produccionOriginal).subscribe(() => {
+            this.router.navigate(['/produccion-diaria']);
+          });
         });
       } else {
         this.produccionDiariaService.addProduccionDiaria(produccionData).subscribe(() => {
