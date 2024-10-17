@@ -8,7 +8,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: white !important;  /* Asegura que el fondo sea blanco */
   }
   
-  .mat-row:hover {
+.mat-row:hover {
     background-color: rgba(0, 0, 0, 0.04) !important;  /* Agrega un ligero fondo al pasar el mouse */
   }
-  
+
+.low-stock {
+    background-color: #ffeb3b; /* Amarillo para destacar stock bajo */
+    color: #f44336; /* Rojo para el texto */
+    font-weight: bold;
+  }
+    
+ 

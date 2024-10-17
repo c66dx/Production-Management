@@ -20,8 +20,8 @@ import { RevisionInventarioComponent } from './modules/inventario/revision-inven
     AppComponent,
     DashboardComponent,
     ConfirmDialogComponent,
-    LayoutComponent,
-    RevisionInventarioComponent
+    RevisionInventarioComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +29,7 @@ import { RevisionInventarioComponent } from './modules/inventario/revision-inven
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [
     provideAnimationsAsync()

@@ -16,6 +16,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   imports: [
@@ -51,7 +52,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatNativeDateModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatPaginatorModule
   ]
 })
 export class MaterialModule { }
