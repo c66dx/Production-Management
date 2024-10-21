@@ -7,7 +7,7 @@ import { MateriaPrima } from '../../models/materia-prima.model';
   providedIn: 'root'
 })
 export class MateriasPrimasService {
-  private apiUrl = 'http://localhost:3000/materias_primas';  // Asegúrate de que la URL sea correcta
+  private apiUrl = 'http://localhost:3000/materias_primas';  
 
   constructor(private http: HttpClient) {}
 
@@ -30,12 +30,11 @@ export class MateriasPrimasService {
   updateMateriaPrima(id: number, materiaPrima: MateriaPrima): Observable<MateriaPrima> {
     if (materiaPrima.cantidad < materiaPrima.stock_minimo) {
       console.warn(`Stock bajo de ${materiaPrima.nombre}: ${materiaPrima.cantidad} unidades`);
-      // Aquí puedes añadir una alerta visual o lógica adicional
+      // Aquí podemos añadir una alerta visual o lógica adicional
     }
     return this.http.put<MateriaPrima>(`${this.apiUrl}/${id}`, materiaPrima);
   }
   
-
   // Eliminar una materia prima
   deleteMateriaPrima(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
