@@ -5,13 +5,13 @@
       "tipo_producto_id": "3",
       "materia_prima": null,
       "cantidad_usada": null,
-      "cantidad_producida": 300,
+      "cantidad_producida": 350,
       "fecha_produccion": "2024-10-15T03:00:00.000Z",
       "materiasPrimasUtilizadas": [
         {
           "id": "8e9e",
-          "nombre": "Materia",
-          "cantidadUsada": 500,
+          "nombre": "Aceite Vegetal",
+          "cantidadUsada": 100,
           "unidad": "litro"
         }
       ]
@@ -20,20 +20,20 @@
       "tipo_producto_id": "2",
       "materia_prima": null,
       "cantidad_usada": null,
-      "cantidad_producida": 100,
+      "cantidad_producida": 500,
       "fecha_produccion": "2024-10-15T03:00:00.000Z",
       "materiasPrimasUtilizadas": [
         {
           "id": "33c6",
-          "nombre": "Prima",
-          "cantidadUsada": 9600,
+          "nombre": "Tomate",
+          "cantidadUsada": 6000,
           "unidad": "kilogramos"
         },
         {
           "id": "8e9e",
-          "nombre": "Materia",
-          "cantidadUsada": 8000,
-          "unidad": "litro"
+          "nombre": "Sal",
+          "cantidadUsada": 500,
+          "unidad": "kilogramos"
         }
       ],
       "id": "a4a8"
@@ -42,26 +42,20 @@
       "tipo_producto_id": "3",
       "materia_prima": null,
       "cantidad_usada": null,
-      "cantidad_producida": 1000,
+      "cantidad_producida": 1200,
       "fecha_produccion": "2024-10-17T03:00:00.000Z",
       "materiasPrimasUtilizadas": [
         {
           "id": "33c6",
-          "nombre": "Prima",
-          "cantidadUsada": 10,
+          "nombre": "Harina de Trigo",
+          "cantidadUsada": 500,
           "unidad": "kilogramos"
         },
         {
           "id": "c6b3",
-          "nombre": "Harina de Trigo",
-          "cantidadUsada": 1,
-          "unidad": "kg"
-        },
-        {
-          "id": "da7e",
-          "nombre": "WEA",
-          "cantidadUsada": 99500,
-          "unidad": "Kilogramos"
+          "nombre": "Agua",
+          "cantidadUsada": 100,
+          "unidad": "litro"
         }
       ],
       "id": "a443"
@@ -71,14 +65,46 @@
       "tipo_producto_id": "1",
       "materia_prima": null,
       "cantidad_usada": null,
-      "cantidad_producida": 10,
+      "cantidad_producida": 50,
       "fecha_produccion": "2024-10-17T03:00:00.000Z",
       "materiasPrimasUtilizadas": [
         {
           "id": "da7e",
-          "nombre": "WEA",
-          "cantidadUsada": 5,
-          "unidad": "Kilogramos"
+          "nombre": "Leche",
+          "cantidadUsada": 25,
+          "unidad": "litro"
+        }
+      ]
+    },
+    {
+      "tipo_producto_id": "1",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "cantidad_producida": 400,
+      "fecha_produccion": "2024-10-23T03:00:00.000Z",
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "072f",
+          "nombre": "Cacao",
+          "cantidadUsada": 150,
+          "unidad": "kilogramos"
+        }
+      ],
+      "id": "a748"
+    },
+    {
+      "id": "0e28",
+      "tipo_producto_id": "1",
+      "materia_prima": null,
+      "cantidad_usada": null,
+      "cantidad_producida": 500,
+      "fecha_produccion": "2024-10-23T03:00:00.000Z",
+      "materiasPrimasUtilizadas": [
+        {
+          "id": "072f",
+          "nombre": "Cacao",
+          "cantidadUsada": 50,
+          "unidad": "kilogramos"
         }
       ]
     }
@@ -86,26 +112,22 @@
   "tipos_producto": [
     {
       "id": "1",
-      "nombre": "Congelados"
+      "nombre": "Lácteos"
     },
     {
       "id": "2",
-      "nombre": "Enlatados"
+      "nombre": "Conservas"
     },
     {
       "id": "3",
-      "nombre": "Comida Preparada"
-    },
-    {
-      "id": "31e4",
-      "nombre": "Enchulado"
+      "nombre": "Repostería"
     }
   ],
   "materias_primas": [
     {
-      "nombre": "Prima",
-      "cantidad": 390,
-      "stock_minimo": 500,
+      "nombre": "Tomate",
+      "cantidad": 30000,
+      "stock_minimo": 5000,
       "unidad": "kilogramos",
       "id": "33c6"
     },
@@ -113,53 +135,25 @@
       "id": "c6b3",
       "nombre": "Harina de Trigo",
       "tipo": "Unidad",
-      "cantidad": 99,
-      "stock_minimo": 20,
-      "unidad": "kg",
+      "cantidad": 2000,
+      "stock_minimo": 500,
+      "unidad": "kilogramos",
       "fecha_ingreso": "2024-01-01",
       "fecha_vencimiento": "2025-01-01"
     },
     {
-      "id": "cd45",
-      "nombre": "CACA",
-      "cantidad": 1000000,
-      "stock_minimo": 5000,
-      "unidad": "KAKAGRAMOS"
-    },
-    {
-      "id": "06be",
-      "nombre": "asdasd",
-      "cantidad": 341234,
-      "stock_minimo": 234423,
-      "unidad": "dsfsdf"
-    },
-    {
-      "id": "bdae",
-      "nombre": "ascascasc",
-      "cantidad": 2332,
-      "stock_minimo": 2323,
-      "unidad": "sadsad"
-    },
-    {
-      "id": "ea26",
-      "nombre": "sadasd",
-      "cantidad": 12312,
-      "stock_minimo": 123123,
-      "unidad": "sdfdsf"
-    },
-    {
       "id": "da7e",
-      "nombre": "WEA",
-      "cantidad": 495,
-      "stock_minimo": 500,
-      "unidad": "Kilogramos"
+      "nombre": "Leche",
+      "cantidad": 1000,
+      "stock_minimo": 200,
+      "unidad": "litros"
     },
     {
-      "id": "fba4",
-      "nombre": "WEA",
-      "cantidad": 100,
-      "stock_minimo": 500,
-      "unidad": "asdsad"
+      "id": "072f",
+      "nombre": "Cacao",
+      "cantidad": 5000,
+      "stock_minimo": 1000,
+      "unidad": "kilogramos"
     }
   ],
   "turnos_empleados": [
@@ -167,7 +161,7 @@
       "nombre_empleado": "Catalina Barria",
       "turno": "Mañana",
       "fecha": "2024-10-14T03:00:00.000Z",
-      "horas_trabajadas": 11,
+      "horas_trabajadas": 8,
       "id": "af78"
     },
     {
@@ -175,28 +169,35 @@
       "nombre_empleado": "Paulo Vicencio",
       "turno": "Mañana",
       "fecha": "2024-10-15T03:00:00.000Z",
-      "horas_trabajadas": 12
+      "horas_trabajadas": 8
     },
     {
       "id": "eb69",
       "nombre_empleado": "Belen Fassler",
       "turno": "Tarde",
       "fecha": "2024-10-16T03:00:00.000Z",
-      "horas_trabajadas": 11
+      "horas_trabajadas": 8
     },
     {
       "id": "f276",
       "nombre_empleado": "Matias Trigo",
       "turno": "Noche",
       "fecha": "2024-10-17T03:00:00.000Z",
-      "horas_trabajadas": 3
+      "horas_trabajadas": 6
     },
     {
       "id": "b94d",
-      "nombre_empleado": "Nseh",
+      "nombre_empleado": "Javier Díaz",
       "turno": "Tarde",
       "fecha": "2024-10-15T03:00:00.000Z",
-      "horas_trabajadas": 12
+      "horas_trabajadas": 8
+    },
+    {
+      "id": "2f08",
+      "nombre_empleado": "Sofía Muñoz",
+      "turno": "Tarde",
+      "fecha": "2024-10-23T03:00:00.000Z",
+      "horas_trabajadas": 8
     }
   ]
 }
