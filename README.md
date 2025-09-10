@@ -284,10 +284,4 @@ ng build --prod           # Build de producción
 ng build --aot            # Build con compilación AOT
 ```
 
-## 📞 Soporte
-
-Para soporte técnico o consultas sobre el proyecto, contacta al equipo de desarrollo.
-
----
-
 **Desarrollado con ❤️ usando Angular y TypeScript**
