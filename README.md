@@ -7,19 +7,6 @@
 
 Un sistema integral de gestión de producción desarrollado en Angular que permite administrar la producción diaria, inventario de materias primas, tipos de productos, turnos de empleados y generar reportes detallados.
 
-## 📋 Tabla de Contenidos
-
-- [Características](#-características)
-- [Tecnologías](#-tecnologías)
-- [Arquitectura](#-arquitectura)
-- [Instalación](#-instalación)
-- [Configuración](#-configuración)
-- [Uso](#-uso)
-- [Módulos](#-módulos)
-- [API](#-api)
-- [Contribuir](#-contribuir)
-- [Licencia](#-licencia)
-
 ## ✨ Características
 
 ### 🎯 Funcionalidades Principales
